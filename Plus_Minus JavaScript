@@ -1,0 +1,9 @@
+function plusMinus(arr) {
+   let n=arr.length;
+   var positive=arr.filter(number => number>0).length/n;
+   var negative=arr.filter(number => number<0).length/n;
+   var zero=arr.filter(number => number == 0).length/n;
+   console.log(positive.toFixed(6));
+   console.log(negative.toFixed(6));
+   console.log(zero.toFixed(6));
+}
